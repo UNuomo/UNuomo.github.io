@@ -816,3 +816,28 @@ footer {
     }
 
 }
+
+
+.project-link {
+    display: inline-block;
+
+    margin-top: 40px;
+
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid #ffffff;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.1em;
+
+    transition:
+        opacity 0.2s ease,
+        padding-left 0.2s ease;
+}
+
+.project-link:hover {
+    opacity: 0.6;
+
+    padding-left: 8px;
+}
