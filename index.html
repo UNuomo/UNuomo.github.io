@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>UNuomo — Game Developer / Researcher</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DAI MINMIN — Game Developer / Researcher</title>
 
     <meta name="description"
-          content="Portfolio of UNuomo, a game developer and researcher exploring games, AI, VR and human interaction.">
+          content="Portfolio of DAI MINMIN, a game developer and researcher exploring games, AI, VR and human interaction.">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
@@ -19,89 +25,179 @@
     ========================== -->
 
     <header class="navbar">
-        <div class="nav-logo">UNuomo</div>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#work">Works</a>
-            <a href="#research">Research</a>
-            <a href="#contact">Contact</a>
+        <a href="#" class="nav-logo">
+            DAI MINMIN
+        </a>
+
+
+        <nav class="nav-center">
+
+            <a href="#about"
+               data-i18n="nav_about">
+                About
+            </a>
+
+            <a href="#work"
+               data-i18n="nav_work">
+                Works
+            </a>
+
+            <a href="#research"
+               data-i18n="nav_research">
+                Research
+            </a>
+
+            <a href="#contact"
+               data-i18n="nav_contact">
+                Contact
+            </a>
+
         </nav>
+
+
+        <!-- Language Switcher -->
+
+        <div class="language-switcher">
+
+            <button
+                class="language-button active"
+                data-lang="en">
+                EN
+            </button>
+
+            <button
+                class="language-button"
+                data-lang="ja">
+                日
+            </button>
+
+            <button
+                class="language-button"
+                data-lang="zh">
+                中
+            </button>
+
+        </div>
+
     </header>
 
 
+
     <!-- =========================
-         HERO
+         MAIN
     ========================== -->
 
     <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
 
         <section class="hero">
 
             <div class="hero-content">
 
-                <p class="eyebrow">
+                <p class="eyebrow"
+                   data-i18n="hero_eyebrow">
+
                     GAME DEVELOPER / RESEARCHER
+
                 </p>
 
-                <h1>
+
+                <h1 data-i18n="hero_title">
+
                     Exploring the relationship<br>
                     between <span>games, AI</span><br>
                     and human interaction.
+
                 </h1>
 
-                <p class="hero-description">
+
+                <p class="hero-description"
+                   data-i18n="hero_description">
+
                     I create interactive experiences across
                     games, VR, AR and artificial intelligence.
+
                 </p>
 
-                <a class="hero-button" href="#work">
-                    Explore my work
+
+                <a class="hero-button"
+                   href="#work">
+
+                    <span data-i18n="hero_button">
+                        Explore my work
+                    </span>
+
                     <span>↓</span>
+
                 </a>
 
             </div>
 
         </section>
+
 
 
         <!-- =========================
              ABOUT
         ========================== -->
 
-        <section id="about" class="section">
+        <section id="about"
+                 class="section">
 
-            <div class="section-label">
+            <div class="section-label"
+                 data-i18n="about_label">
+
                 01 / ABOUT
+
             </div>
+
 
             <div class="about-grid">
 
+
                 <div>
-                    <h2>
+
+                    <h2 data-i18n="about_title">
+
                         Game developer<br>
                         & researcher.
+
                     </h2>
+
                 </div>
+
 
                 <div class="about-text">
 
-                    <p>
+                    <p data-i18n="about_p1">
+
                         I am a game developer and researcher
                         currently studying at Tokyo University
                         of the Arts.
+
                     </p>
 
-                    <p>
+
+                    <p data-i18n="about_p2">
+
                         My background spans biomedical engineering,
                         AI development and game development.
+
                     </p>
 
-                    <p>
+
+                    <p data-i18n="about_p3">
+
                         I am interested in creating interactive
                         experiences that explore the relationship
                         between humans, artificial intelligence
                         and virtual worlds.
+
                     </p>
 
                 </div>
@@ -109,55 +205,84 @@
             </div>
 
         </section>
+
 
 
         <!-- =========================
              FEATURED WORK
         ========================== -->
 
-        <section id="work" class="section work-section">
+        <section id="work"
+                 class="section work-section">
 
-            <div class="section-label">
+
+            <div class="section-label"
+                 data-i18n="work_label">
+
                 02 / SELECTED WORK
+
             </div>
 
+
             <div class="project">
+
 
                 <div class="project-image">
 
                     <div class="image-placeholder">
-                        <span>LIBREWING</span>
+
+                        <span>
+                            LIBREWING
+                        </span>
+
                     </div>
 
                 </div>
 
+
                 <div class="project-info">
+
 
                     <p class="project-number">
                         01
                     </p>
 
+
                     <h2>
                         LIBREWING
                     </h2>
+
 
                     <p class="project-type">
                         WEB × VR × AI
                     </p>
 
-                    <p class="project-description">
-                        An interactive game where players create
-                        their own mechanical bird on the web and
-                        control it in VR using their hands.
+
+                    <p class="project-description"
+                       data-i18n="project_description">
+
+                        An interactive game where players
+                        create their own mechanical bird on
+                        the web and control it in VR using
+                        their hands.
+
                     </p>
 
+
                     <div class="tags">
+
                         <span>Unity</span>
+
                         <span>VR</span>
+
                         <span>OpenXR</span>
+
                         <span>WebGL</span>
+
                         <span>AI</span>
+
                         <span>Network</span>
+
                     </div>
 
                 </div>
@@ -165,62 +290,105 @@
             </div>
 
         </section>
+
 
 
         <!-- =========================
              RESEARCH
         ========================== -->
 
-        <section id="research" class="section">
+        <section id="research"
+                 class="section">
 
-            <div class="section-label">
+
+            <div class="section-label"
+                 data-i18n="research_label">
+
                 03 / RESEARCH
+
             </div>
+
 
             <div class="research-grid">
 
+
                 <div class="research-title">
+
                     <h2>
                         Game AI
                     </h2>
+
                 </div>
+
 
                 <div class="research-content">
 
-                    <p>
+
+                    <p data-i18n="research_p1">
+
                         My current research focuses on the
                         application of artificial intelligence
                         in games.
+
                     </p>
 
-                    <p>
+
+                    <p data-i18n="research_p2">
+
                         I am particularly interested in AI
                         characters whose behavior and personality
                         can change through interaction with human
                         players and other AI agents.
+
                     </p>
+
 
                     <div class="research-topics">
 
+
                         <div>
+
                             <strong>01</strong>
-                            <span>AI Characters</span>
+
+                            <span data-i18n="research_topic1">
+                                AI Characters
+                            </span>
+
                         </div>
 
+
                         <div>
+
                             <strong>02</strong>
-                            <span>Human-AI Interaction</span>
+
+                            <span data-i18n="research_topic2">
+                                Human-AI Interaction
+                            </span>
+
                         </div>
 
+
                         <div>
+
                             <strong>03</strong>
-                            <span>Emergent Behavior</span>
+
+                            <span data-i18n="research_topic3">
+                                Emergent Behavior
+                            </span>
+
                         </div>
 
+
                         <div>
+
                             <strong>04</strong>
-                            <span>Multi-Agent Systems</span>
+
+                            <span data-i18n="research_topic4">
+                                Multi-Agent Systems
+                            </span>
+
                         </div>
+
 
                     </div>
 
@@ -231,84 +399,141 @@
         </section>
 
 
+
         <!-- =========================
-             OTHER INTERESTS
+             INTERESTS
         ========================== -->
 
         <section class="section interests-section">
 
-            <div class="section-label">
+
+            <div class="section-label"
+                 data-i18n="interests_label">
+
                 04 / INTERESTS
+
             </div>
+
 
             <div class="interest-list">
 
+
                 <div>
+
                     <span>01</span>
-                    <h3>Virtual Reality</h3>
+
+                    <h3 data-i18n="interest1">
+                        Virtual Reality
+                    </h3>
+
                 </div>
 
+
                 <div>
+
                     <span>02</span>
-                    <h3>Augmented Reality</h3>
+
+                    <h3 data-i18n="interest2">
+                        Augmented Reality
+                    </h3>
+
                 </div>
 
+
                 <div>
+
                     <span>03</span>
-                    <h3>Interactive Systems</h3>
+
+                    <h3 data-i18n="interest3">
+                        Interactive Systems
+                    </h3>
+
                 </div>
 
+
                 <div>
+
                     <span>04</span>
-                    <h3>Artificial Intelligence</h3>
+
+                    <h3 data-i18n="interest4">
+                        Artificial Intelligence
+                    </h3>
+
                 </div>
 
+
                 <div>
+
                     <span>05</span>
-                    <h3>Experimental Games</h3>
+
+                    <h3 data-i18n="interest5">
+                        Experimental Games
+                    </h3>
+
                 </div>
+
 
             </div>
 
         </section>
+
 
 
         <!-- =========================
              CONTACT
         ========================== -->
 
-        <section id="contact" class="section contact-section">
+        <section id="contact"
+                 class="section contact-section">
 
-            <div class="section-label">
+
+            <div class="section-label"
+                 data-i18n="contact_label">
+
                 05 / CONTACT
+
             </div>
 
-            <h2>
+
+            <h2 data-i18n="contact_title">
+
                 Let's make<br>
                 something interesting.
+
             </h2>
+
 
             <div class="contact-links">
 
+
                 <a href="https://github.com/UNuomo"
                    target="_blank">
+
                     GitHub ↗
+
                 </a>
 
+
                 <!--
-                Replace this with your Instagram URL later.
+                    Replace the # below
+                    with your Instagram URL later.
                 -->
 
                 <a href="#"
                    target="_blank">
+
                     Instagram ↗
+
                 </a>
+
 
             </div>
 
         </section>
 
+
     </main>
+
 
 
     <!-- =========================
@@ -318,7 +543,7 @@
     <footer>
 
         <div>
-            UNuomo
+            DAI MINMIN
         </div>
 
         <div>
@@ -327,5 +552,12 @@
 
     </footer>
 
+
+
+    <!-- LANGUAGE SCRIPT -->
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
