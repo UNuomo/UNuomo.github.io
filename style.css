@@ -294,8 +294,26 @@ a {
     align-items: center;
 }
 
-.project-image {
+.project-hero-image {
+    display: block;
+
     width: 100%;
+
+    aspect-ratio: 16 / 10;
+
+    object-fit: cover;
+
+    border: 1px solid #333333;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+.project-hero-image:hover {
+    transform: scale(1.015);
+
+    filter: brightness(1.08);
 }
 
 .image-placeholder {
