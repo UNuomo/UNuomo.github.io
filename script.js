@@ -7,6 +7,39 @@ const translations = {
         nav_research: "Research",
         nav_contact: "Contact",
 
+        project1_title:
+    "LIBREWING",
+
+project1_type:
+    "WEB × VR × AI",
+
+project1_description:
+    "An interactive game where players create their own mechanical bird on the web and control it in VR using their hands.",
+
+
+project2_title:
+    "KissClass",
+
+project2_type:
+    "GAME × INTERACTION",
+
+project2_description:
+    "Kiss each other across the phone screen and feel each other's burning emotions through invisible electromagnetic waves.",
+
+
+project3_title:
+    "AR Oceanarium",
+
+project3_type:
+    "AR INTERACTION",
+
+project3_description:
+    "The doctor's footsteps become a warm ocean current, guiding the fish from the open sea to the hospital. By using AR, expand the world within the patient's mind and bring warmth to the relationship between patients and caregivers.",
+
+
+project_view:
+    "VIEW PROJECT →",
+
         hero_eyebrow:
             "GAME DEVELOPER / RESEARCHER",
 
@@ -85,7 +118,7 @@ const translations = {
             "05 / CONTACT",
 
         contact_title:
-            `Let's make<br>more free and interesting game`
+            `Let's make<br>freer and more interesting games.`
     },
 
 
@@ -95,6 +128,39 @@ const translations = {
         nav_work: "作品",
         nav_research: "研究",
         nav_contact: "連絡先",
+
+        project1_title:
+    "LIBREWING",
+
+project1_type:
+    "WEB × VR × AI",
+
+project1_description:
+    "Web上で自分だけの機械の鳥を制作し、その鳥をVR空間へ持ち込み、自分の手やジェスチャーで操作するインタラクティブゲームです。",
+
+
+project2_title:
+    "KissClass",
+
+project2_type:
+    "GAME × INTERACTION",
+
+project2_description:
+    "スマートフォンの画面越しにキスを交わし、目に見えない電磁波を通して、お互いの熱い感情を感じるインタラクティブゲームです。",
+
+
+project3_title:
+    "AR Oceanarium",
+
+project3_type:
+    "AR INTERACTION",
+
+project3_description:
+    "医師の足音が温かな海流となり、魚たちを大海原から病院へと導きます。ARを通して患者の心の中に広がる世界を拡張し、患者と医療者の関係に温かさをもたらします。",
+
+
+project_view:
+    "作品を見る →",
 
         hero_eyebrow:
             "GAME DEVELOPER / RESEARCHER",
@@ -184,6 +250,39 @@ const translations = {
         nav_work: "作品",
         nav_research: "研究",
         nav_contact: "联系",
+
+        project1_title:
+    "LIBREWING",
+
+project1_type:
+    "WEB × VR × AI",
+
+project1_description:
+    "玩家可以在网页端亲手制作属于自己的机械鸟，并将它带入VR世界，通过自己的双手与手势控制它。",
+
+
+project2_title:
+    "KissClass",
+
+project2_type:
+    "GAME × INTERACTION",
+
+project2_description:
+    "隔着手机屏幕亲吻彼此，通过看不见的电磁波，感受彼此炽热的情感。",
+
+
+project3_title:
+    "AR Oceanarium",
+
+project3_type:
+    "AR INTERACTION",
+
+project3_description:
+    "医生的脚步化作温暖的洋流，引导鱼儿从广阔的大海游向医院。通过AR扩展患者心中的世界，为患者与医护人员之间的关系注入温度。",
+
+
+project_view:
+    "查看作品 →",
 
         hero_eyebrow:
             "游戏开发者 / 研究者",
