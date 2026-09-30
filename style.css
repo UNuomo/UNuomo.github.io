@@ -1028,3 +1028,114 @@ footer {
 
     padding-left: 8px;
 }
+
+
+/* =========================================================
+   EMAIL POPUP
+========================================================= */
+
+.email-button {
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.email-popup {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+
+    z-index: 9999;
+}
+
+.email-popup.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.email-popup-content {
+    position: relative;
+
+    width: min(420px, 85vw);
+
+    padding: 45px;
+
+    background: #f4f3ef;
+    color: #111111;
+
+    text-align: center;
+}
+
+.email-popup-label {
+    margin-bottom: 20px;
+
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: #777777;
+}
+
+.email-address {
+    margin-bottom: 25px;
+
+    font-size: 1rem;
+    word-break: break-all;
+}
+
+.email-copy-button {
+    padding: 10px 18px;
+
+    border: 1px solid #111111;
+    background: transparent;
+    color: #111111;
+
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.email-copy-button:hover {
+    background: #111111;
+    color: #ffffff;
+}
+
+.email-popup-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+
+    border: none;
+    background: none;
+
+    font-size: 1.5rem;
+    color: #111111;
+
+    cursor: pointer;
+}
+
+.email-copy-message {
+    margin-top: 15px;
+
+    font-size: 0.7rem;
+    color: #777777;
+}
