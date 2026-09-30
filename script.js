@@ -85,7 +85,7 @@ const translations = {
             "05 / CONTACT",
 
         contact_title:
-            `Let's make<br>something interesting.`
+            `Let's make<br>more free and interesting game`
     },
 
 
@@ -174,7 +174,7 @@ const translations = {
             "05 / 連絡先",
 
         contact_title:
-            `一緒に<br>面白いものを作りましょう。`
+            `より自由、<br>より面白いゲームへ`
     },
 
 
@@ -263,7 +263,7 @@ const translations = {
             "05 / 联系方式",
 
         contact_title:
-            `一起<br>创造有趣的东西。`
+            `一起做<br>更自由、更有趣的游戏`
     }
 
 };
