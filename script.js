@@ -586,3 +586,118 @@ if (
     updateCounter();
 
 }
+
+
+/* =========================================================
+   EMAIL POPUP
+========================================================= */
+
+const emailButton =
+    document.getElementById("emailButton");
+
+const emailPopup =
+    document.getElementById("emailPopup");
+
+const emailPopupClose =
+    document.getElementById("emailPopupClose");
+
+const emailCopyButton =
+    document.getElementById("emailCopyButton");
+
+const emailAddress =
+    document.getElementById("emailAddress");
+
+const emailCopyMessage =
+    document.getElementById("emailCopyMessage");
+
+
+if (
+    emailButton &&
+    emailPopup
+) {
+
+    // Open popup
+    emailButton.addEventListener(
+        "click",
+        () => {
+
+            emailPopup.classList.add("active");
+
+        }
+    );
+
+
+    // Close popup
+    emailPopupClose.addEventListener(
+        "click",
+        () => {
+
+            emailPopup.classList.remove("active");
+
+        }
+    );
+
+
+    // Click outside popup to close
+    emailPopup.addEventListener(
+        "click",
+        (event) => {
+
+            if (
+                event.target === emailPopup
+            ) {
+
+                emailPopup.classList.remove(
+                    "active"
+                );
+
+            }
+
+        }
+    );
+
+
+    // Copy email
+    emailCopyButton.addEventListener(
+        "click",
+        async () => {
+
+            try {
+
+                await navigator.clipboard.writeText(
+                    emailAddress.textContent.trim()
+                );
+
+                emailCopyMessage.textContent =
+                    "Email copied.";
+
+            } catch (error) {
+
+                emailCopyMessage.textContent =
+                    "Please copy the email manually.";
+
+            }
+
+        }
+    );
+
+
+    // ESC to close
+    document.addEventListener(
+        "keydown",
+        (event) => {
+
+            if (
+                event.key === "Escape"
+            ) {
+
+                emailPopup.classList.remove(
+                    "active"
+                );
+
+            }
+
+        }
+    );
+
+}
