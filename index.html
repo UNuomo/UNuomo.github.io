@@ -636,18 +636,13 @@
 
                 </a>
 
-
-                <!--
-                    Replace the # below
-                    with your Instagram URL later.
-                -->
-
-                <a href="#"
-                   target="_blank">
-
-                    Instagram ↗
-
-                </a>
+                <button
+                    type="button"
+                    class="email-button"
+                    id="emailButton"
+                >
+                    Email ↗
+                </button>
 
 
             </div>
@@ -656,6 +651,44 @@
 
 
     </main>
+
+
+    <div class="email-popup" id="emailPopup">
+
+        <div class="email-popup-content">
+    
+            <button
+                class="email-popup-close"
+                id="emailPopupClose"
+                aria-label="Close"
+            >
+                ×
+            </button>
+    
+            <p class="email-popup-label">
+                EMAIL
+            </p>
+    
+            <p class="email-address" id="emailAddress">
+                your-email@example.com
+            </p>
+    
+            <button
+                class="email-copy-button"
+                id="emailCopyButton"
+            >
+                COPY EMAIL
+            </button>
+    
+            <p
+                class="email-copy-message"
+                id="emailCopyMessage"
+            >
+            </p>
+    
+        </div>
+    
+    </div>
 
 
 
