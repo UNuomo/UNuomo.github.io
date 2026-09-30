@@ -377,3 +377,113 @@ if (savedLanguage &&
     changeLanguage("en");
 
 }
+
+
+/* =========================================================
+   PROJECT SLIDER
+========================================================= */
+
+const projectsTrack =
+    document.querySelector(".projects-track");
+
+const projectCards =
+    document.querySelectorAll(".project-card");
+
+const prevButton =
+    document.getElementById("projectsPrev");
+
+const nextButton =
+    document.getElementById("projectsNext");
+
+const currentCounter =
+    document.getElementById("projectCurrent");
+
+const totalCounter =
+    document.getElementById("projectTotal");
+
+
+if (
+    projectsTrack &&
+    projectCards.length > 0
+) {
+
+    totalCounter.textContent =
+        String(projectCards.length).padStart(2, "0");
+
+
+    function getProjectWidth() {
+
+        const card =
+            projectCards[0];
+
+        const style =
+            window.getComputedStyle(
+                projectsTrack
+            );
+
+        const gap =
+            parseFloat(style.columnGap) || 0;
+
+        return card.offsetWidth + gap;
+
+    }
+
+
+    function updateCounter() {
+
+        const width =
+            getProjectWidth();
+
+        const index =
+            Math.round(
+                projectsTrack.scrollLeft /
+                width
+            );
+
+        const current =
+            Math.min(
+                index + 1,
+                projectCards.length
+            );
+
+        currentCounter.textContent =
+            String(current).padStart(2, "0");
+
+    }
+
+
+    nextButton.addEventListener(
+        "click",
+        () => {
+
+            projectsTrack.scrollBy({
+                left: getProjectWidth(),
+                behavior: "smooth"
+            });
+
+        }
+    );
+
+
+    prevButton.addEventListener(
+        "click",
+        () => {
+
+            projectsTrack.scrollBy({
+                left: -getProjectWidth(),
+                behavior: "smooth"
+            });
+
+        }
+    );
+
+
+    projectsTrack.addEventListener(
+        "scroll",
+        updateCounter
+    );
+
+
+    updateCounter();
+
+}
